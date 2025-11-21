@@ -1,0 +1,4 @@
+body { font-family: Arial; width: 320px; padding: 8px; }
+#video-info { border: 1px solid #ddd; padding: 8px; border-radius: 6px; }
+#bookmarks-list { list-style: none; padding: 0; max-height: 230px; overflow-y: auto; }
+.bookmark-item { display: flex; justify-content: space-between; padding: 6px; border-bottom: 1px solid #eee; }
