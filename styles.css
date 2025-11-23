@@ -1,6 +1,4 @@
-/* -----------------------------------------------------------
-   MATERIAL / MODERN UI + DARK MODE
------------------------------------------------------------ */
+/* MATERIAL / MODERN UI + DARK MODE*/
 
 /* Dark theme */
 :root {
@@ -8,7 +6,7 @@
 
   --bg: #1e1e1e;
   --fg: #f1f1f1;
-  --card-bg: #e77272;
+  --card-bg: #e77272; 
   --border: #3a3a3a;
   --accent: #ff4444;
   --button-bg: #333;
@@ -16,9 +14,7 @@
 }
 
 
-/* -----------------------------------------------------------
-   Global Layout
------------------------------------------------------------ */
+/* Global Layout */
 #popup-container {
   background: var(--bg);
   padding: 16px;
@@ -49,29 +45,17 @@ h1 {
   font-weight: 600;
 }
 
-/* -----------------------------------------------------------
-   Card Container
------------------------------------------------------------ */
-
-#video-info {
-  background: var(--card-bg);
-  padding: 12px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-  margin-bottom: 12px;
-  box-shadow: 0 1px 3px #00000010;
-  transition: background 0.2s ease, border 0.2s ease;
-}
-
 h2 {
-  margin: 10px 0 6px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
+  margin: 10px 0 8px;
+  opacity: 0.9;
 }
 
-/* -----------------------------------------------------------
+
+/* -
    Buttons
------------------------------------------------------------ */
+- */
 
 button {
   padding: 6px 12px;
@@ -99,9 +83,7 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* -----------------------------------------------------------
-   Bookmark List
------------------------------------------------------------ */
+/* Bookmark List */
 
 #bookmarks-list {
   list-style: none;
@@ -127,14 +109,7 @@ button:disabled {
   border-bottom: none;
 }
 
-/* controls on right */
-.bookmark-controls button {
-  margin-left: 8px;
-}
-
-/* -----------------------------------------------------------
-   Footer
------------------------------------------------------------ */
+/* Footer */
 
 .footer {
   margin-top: 12px;
