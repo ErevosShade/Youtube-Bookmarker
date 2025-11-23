@@ -96,9 +96,10 @@ function addBookmarkButtonToYouTubePlayer() {
     const label =
       userInput.trim() === "" ? defaultLabel : userInput.trim();
     
-      chrome.runtime.sendMessage(undefined,{
+      chrome.runtime.sendMessage({
       type: "SAVE_BOOKMARK",
-      time: Math.floor(video.currentTime),
+      time: time,
+      label: label,
       url: location.href
     },
     (response) => {
