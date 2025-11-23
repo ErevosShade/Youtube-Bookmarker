@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Bookmarker",
+  "version": "1.1",
+  "description": "Save and jump to timestamps on YouTube videos.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://www.youtube.com/*", "https://youtube.com/*"],
+  "background": { "service_worker": "service_worker.js" },
+  "action": { "default_popup": "popup.html", "default_title": "YouTube Bookmarker" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
